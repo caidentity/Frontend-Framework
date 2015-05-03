@@ -3,6 +3,9 @@
 // Licensed under MIT Open Source
 
 // Make sure the charset is set appropriately
+@import 'kit/_functions';
+@import 'kit/_settings';
+@import 'kit/normalize';
 
 // Behold, here are all the Foundation components.
 @import 'kit/components/grid';
