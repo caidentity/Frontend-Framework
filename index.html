@@ -4,25 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
-    <link rel="stylesheet" href="assets/stylesheets/dest/stylesheets/kit.min.css" />
+    <link rel="stylesheet" href="assets/stylesheets/dest/kit.min.css" />
+    <link rel="stylesheet" href="assets/stylesheets/dest/pages.min.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
  
 <!-- Navbar -->       
-<nav class="top-bar" data-topbar role="navigation">
+<nav class="top-bar fixed" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
       <h1><a href="#">My Site</a></h1>
     </li>
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Feed</span></a></li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Directory</span></a></li>
   </ul>
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="active"><a href="#">Right Button Active</a></li>
       <li class="has-dropdown">
-        <a href="#">Right Button Dropdown</a>
+        <a href="#"><img src="./assets/img/avatars/avatar1.jpg" height="40" width="40"/></a>
         <ul class="dropdown">
           <li><a href="#">First link in dropdown</a></li>
           <li class="active"><a href="#">Active link in dropdown</a></li>
@@ -31,43 +32,53 @@
     </ul>
     <!-- Left Nav Section -->
     <ul class="left">
-      <li><a href="#">Left Nav Button</a></li>
+      <li><a href="#">Feed</a></li>
+      <li><a href="#">Directory</a></li>
     </ul>
   </section>
 </nav>
 
-<div class="row">     
-  <div class="large-6 columns">
+<div class="row homeheader">     
+  <div class="large-6 columns headline">
 	  Latest Posts
   </div>
-  <div class="large-6 columns">
+  <div class="large-6 columns headline">
 	  Our Team
   </div>
 </div>       
-<div class="row">     
+<div class="row feed">     
   <!--Feed--> 
   <div class="large-6 columns">
+    <!--Compose-->
+    <div class="row composerow">
+	  <textarea rows="2" cols="50"></textarea>
+	  <a href="#" class="button">Send</a>
+      <div class="attach">Attach</div>
+    </div>
     <!--Post-->
     <div class="row">
-      <div class="large-2 columns small-3"><img src="./assets/img/avatars/avatar1.jpg"/></div>
+      <div class="large-2 columns small-3 avatar"><img src="./assets/img/avatars/avatar1.jpg"/></div>
       <div class="large-10 columns">
-        <p><strong>Kelly Fuller</strong> to</p>
+        <div class="userdetails">
+          <a href="#">Kelly Fuller</a> to <a href="#">Entire Team</a>
+          <p>Apr 15, 2015</p>
+        </div>
         <p>to Bacon ipsum dolor sit amet nulla ham qui sint 
         exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-        <h6>2 People Liked This</h6>
+        <div class="likethis">2 People Liked This</div>
         <ul class="inline-list">
           <li><a href="">Like</a></li>
           <li><a href="">Comment</a></li>
         </ul>
         <!--Comments -->
-        <div class="row">
-          <div class="large-2 columns small-3"><img src="./assets/img/avatars/avatar1.jpg"/></div>
+        <div class="row commentrow">
+          <div class="large-2 columns small-3 avatar"><img src="./assets/img/avatars/avatar1.jpg"/></div>
           <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, 
             chuck duis velit. Aute in reprehenderit</p>
           </div>
         </div>
-        <div class="row">
-          <div class="large-2 columns small-3"><img src="./assets/img/avatars/avatar1.jpg"/></div>
+        <div class="row commentrow">
+          <div class="large-2 columns small-3 avatar"><img src="./assets/img/avatars/avatar1.jpg"/></div>
           <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, 
             chuck duis velit. Aute in reprehenderit</p>
           </div>
@@ -78,9 +89,12 @@
     <hr/>
     <!--Post-->
     <div class="row">
-      <div class="large-2 columns small-3"><img src="./assets/img/avatars/avatar1.jpg"/></div>
+      <div class="large-2 columns small-3 avatar"><img src="./assets/img/avatars/avatar1.jpg"/></div>
       <div class="large-10 columns">
-        <p><strong>Kelly Fuller</strong> to</p>
+        <div class="userdetails">
+          <a href="#">Kelly Fuller</a> to <a href="#">Entire Team</a>
+           <p>Apr 15, 2015</p>
+        </div>
         <p>to Bacon ipsum dolor sit amet nulla ham qui sint 
         exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
         <ul class="inline-list">
@@ -92,9 +106,12 @@
     <hr/>   
     <!--Post-->
     <div class="row">
-      <div class="large-2 columns small-3"><img src="./assets/img/avatars/avatar1.jpg"/></div>
+      <div class="large-2 columns small-3 avatar"><img src="./assets/img/avatars/avatar1.jpg"/></div>
       <div class="large-10 columns">
-        <p><strong>Kelly Fuller</strong> to</p>
+        <div class="userdetails">
+          <a href="#">Kelly Fuller</a> to <a href="#">Entire Team</a>
+          <p>Apr 15, 2015</p>
+        </div>
         <p>to Bacon ipsum dolor sit amet nulla ham qui sint 
         exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
         <h6>2 People Liked This</h6>
@@ -103,8 +120,8 @@
           <li><a href="">Comment</a></li>
         </ul>
         <!--Comments -->
-        <div class="row">
-          <div class="large-2 columns small-3"><img src="./assets/img/avatars/avatar1.jpg"/></div>
+        <div class="row commentrow">
+          <div class="large-2 columns small-3 avatar"><img src="./assets/img/avatars/avatar1.jpg"/></div>
           <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, 
             chuck duis velit. Aute in reprehenderit</p>
           </div>
@@ -118,9 +135,12 @@
   <div class="large-6 columns"> 
     <!--Post-->
     <div class="row">
-      <div class="large-2 columns small-3"><img src="./assets/img/avatars/avatar1.jpg"/></div>
+      <div class="large-2 columns small-3 avatar"><img src="./assets/img/avatars/avatar1.jpg"/></div>
       <div class="large-10 columns">
-        <p><strong>Kelly Fuller</strong> to</p>
+        <div class="userdetails">
+          <a href="#">Kelly Fuller</a> to <a href="#">Entire Team</a>
+          <p>Apr 15, 2015</p>
+        </div>
         <p>to Bacon ipsum dolor sit amet nulla ham qui sint 
         exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
       </div>

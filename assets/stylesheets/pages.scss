@@ -1,0 +1,58 @@
+/*--Feed--*/
+.homeheader {
+	margin-top: 60px;
+      margin-bottom: 20px;
+	.headline{
+	  border-bottom: 1px solid #e4edf2;
+      color: #A0A9BE;
+      font-size: 22px;
+      font-weight: 200;
+      padding-bottom: 5px;
+	}
+}
+.feed {
+  .composerow {
+	  border-bottom: 1px solid #e4edf2;
+	  margin-bottom: 15px;
+	textarea {
+	    margin-bottom: 10px;
+	}
+    .button {
+	    display: inline-block;
+	    float: right;
+	    font-size: 14px;
+	    padding: 10px 15px;
+	    margin-bottom: 10px;
+    }
+    .attach {
+	    display: inline-block;
+      float: right;
+      font-size: 14px;
+      color: #A0A9BE;
+      padding: 5px 15px;
+    }
+  }
+  .userdetails {
+    margin: 0px;
+    a {
+	  font-weight: 800;	  
+    }
+    p {
+	  font-size: 12px;
+	  padding-top: 5px;
+      color: #A0A9BE;
+      margin-bottom: 5px;
+    }
+  }
+  .likethis {
+    font-size: 12px;
+    padding-top: 5px;
+    color: #A0A9BE;
+    margin-bottom: 5px;
+  }
+  .commentrow {
+    border-top: 1px solid #e4edf2;
+    padding-top: 10px;
+  }
+  .avatar img {border-radius: 3px;}	
+}
