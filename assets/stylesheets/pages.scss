@@ -47,10 +47,25 @@ body {
   padding-bottom: 15px;
   font-family: "latolight";
 }
-/*--Groups--*/
+/*--Footer--*/
+footer {
+  .linksrow {
+	width: 340px;
+    margin: 0 auto;
+  }
+  .logo{
+    width: 62px;
+    height: 28px;
+    background-size: 62px 28px;
+    -webkit-background-size: 62px 28px;
+    margin: 26px auto;
+    background-image: url("../../img/footlogo.png");
+  }
+}
 /*--RETINA SUPPORT--*/
 @media 
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
   .top-bar .brand { background-image: url("../../img/navlogo-2x.png");}   
+  footer .logo { background-image: url("../../img/footlogo-2x.png");}   
 }
