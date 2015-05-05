@@ -17,12 +17,12 @@ $topbar-bg-color: $oil !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
-$topbar-height: rem-calc(45) !default;
+$topbar-height: rem-calc(30) !default;
 $topbar-margin-bottom: 0 !default;
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: $font-weight-normal !default;
-$topbar-title-font-size: rem-calc(17) !default;
+$topbar-title-font-size: rem-calc(15) !default;
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $white !default;
@@ -30,7 +30,7 @@ $topbar-link-color-hover: $white !default;
 $topbar-link-color-active: $white !default;
 $topbar-link-color-active-hover: $white !default;
 $topbar-link-weight: $font-weight-normal !default;
-$topbar-link-font-size: rem-calc(13) !default;
+$topbar-link-font-size: rem-calc(12) !default;
 $topbar-link-hover-lightness: -10% !default; // Darken by 10%
 $topbar-link-bg: $topbar-bg !default;
 $topbar-link-bg-hover: $jet !default;
@@ -172,9 +172,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         margin-bottom: 0;
       }
 
-      .row {
-        max-width: none;
-      }
+
 
       form,
       input, 
@@ -251,7 +249,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
 
         // Adding the class "menu-icon" will add the 3-line icon people love and adore.
         &.menu-icon {
-          margin-top: -16px;
+          margin-top: -22px;
           top: 50%;
 
           a {
@@ -273,7 +271,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
       &.expanded {
         background: transparent;
         height: auto;
-
+		background: $primary-color;
         .title-area {
           background: $topbar-bg;
         }
@@ -313,7 +311,8 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
     .top-bar-section {
       #{$default-float}: 0;
       position: relative;
-      width: auto;
+      max-width: $row-width;
+      margin: 0 auto;
       @include single-transition($default-float, $topbar-transition-speed);
 
       ul {
@@ -739,4 +738,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
       }
     }
   }
+}
+.top-bar {
+	.row:after, .row:before {display: none;}
 }

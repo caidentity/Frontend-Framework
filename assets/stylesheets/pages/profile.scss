@@ -1,0 +1,95 @@
+/*--Profile Header--*/
+.profileheader {
+  width: 100%;
+  padding: 35px 0px 45px 0px;
+  margin-top:40px;
+  background: #f4f9fc;
+  border-bottom: 1px solid #d2e6ef;
+  .avatar {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    padding: 0px;
+    background: #FFFBEB;
+    margin-left: 0px;
+    margin-top: 5px;
+    img {border-radius: 3px;}		  		
+  }
+  .details {
+    margin: 14px 0px 0px 5px;
+    padding: 0px;
+    a {
+      font-weight: 300;
+      font-family: "latolight";	
+      font-size: 34px;  
+    }
+    p {
+      font-size: 12px;
+      padding-top: 5px;
+      color: #9DA4B6;
+      margin-bottom: 5px;
+    }
+  }
+  .subdetails {
+	width: 30%;
+    margin: 10px 14px 0px 0px;
+    padding: 0px;
+    text-align: right;
+    float: right;
+    a {
+      font-weight: 300;	
+      font-family: "latolight";
+      font-size: 34px;  
+    }
+    p {
+      font-size: 12px;
+      padding-top: 5px;
+      color: #9DA4B6;
+      margin-bottom: 5px;
+    }
+  }
+  .social {
+	margin-top: 20px;
+	width: 82%;
+    a {
+	  padding-right: 30px;	  
+    }
+  }
+}
+/*--Profile Header--*/
+.profilefav {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border:1px solid #e4edf2;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #3d4a55;
+}
+/*-- Mobile Adjustments --*/
+@media only screen and (max-width: 980px) {
+  .profileheader {
+    .avatar {
+      display: block;
+      margin: 0 auto;
+      float: none;
+    }
+    .details {
+      text-align: center;
+    }
+    .subdetails{
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+    .subdetails a {
+      font-size: 16px;
+      padding-top: 5px;
+      color: #9DA4B6;
+      margin-bottom: 5px;
+	  }
+    .social {
+	  width:100%;
+	}
+  }
+}

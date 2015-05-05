@@ -1,0 +1,91 @@
+/*--Directory--*/
+.directory {
+  margin-left: 10px;
+  float: right;
+  width: 38%;
+  .avatar {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 0px;
+    background: #FFFBEB;
+    margin-left: 10px;
+    margin-top: 5px;
+    img {border-radius: 3px;}		  		
+  }
+  .details {
+    margin: 0px;
+    padding: 0px;
+    a {
+      font-weight: 800;	  
+    }
+    p {
+      font-size: 12px;
+      padding-top: 0px;
+      color: #9DA4B6;
+      margin-bottom: 5px;
+    }
+    .status {color: #444d64;}
+  }
+  p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .groupmembers {
+    img {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 2px;
+    }
+    .morebox {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 2px;
+      background: #c83442;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 3px;
+    }
+  }
+  .viewmorerow {
+    font-size: 13px;
+    margin: 0px 0px 14px 0px;
+    height: 50px;
+    font-weight: 400;
+  }
+}
+/*--Company Stats--*/
+.statsection {
+  .headline {
+    margin-bottom: 0px;
+  }
+  .row {
+    border-bottom: 1px solid #e4edf2;
+    padding: 25px 0px 20px 0px;
+    margin-left: 0px;
+    height: 80px;
+    .stat {
+      display: inline-block;
+      font-weight: 300;
+      font-family: "latolight";
+      font-size: 34px;
+      color: #c83442;
+    }
+    .detail {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 14px;
+      padding-left: 10px;
+      color: #9DA4B6;
+    }		
+  }
+}
+/*-- Mobile Adjustments --*/
+@media only screen and (max-width: 980px) {
+  .directory{
+	  width: 100%;
+  }
+}

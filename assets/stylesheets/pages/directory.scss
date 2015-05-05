@@ -1,0 +1,82 @@
+/*--Directory Header--*/
+.directoryheader {
+  width: 100%;
+  padding: 30px 0px 45px 0px;
+  margin:40px 0px;
+  background: #FFFBEB;
+  border-bottom: 1px solid #e8deb6;
+  .details {
+    margin: 14px 0px 0px 0px;
+    padding: 0px;
+      text-align: center;
+    a {
+      font-weight: 300;	
+      font-family: "latolight";
+      font-size: 36px;  
+    }
+    p {
+      font-size: 12px;
+      padding-top: 5px;
+      color: #9DA4B6;
+      margin-bottom: 5px;
+    }
+  }
+}
+/*--Directory--*/
+.directoryrow {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin-left: 0px;
+  margin-bottom: 35px;
+  .avatar {
+    display: block;
+    float: none;
+    width: 170px;
+    height: 170px;
+    padding: 0px;
+    background: #FFFBEB;
+    margin: 0px auto 15px auto;
+    img {border-radius: 3px;}		  		
+  }
+  .details {
+    display: block;
+    float: none;
+    position: relative;
+	text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    padding-top: 0px;
+    color: #9DA4B6;
+    font-weight: 400;	
+    .name {
+      font-weight: 300;	 
+      font-family: "latolight";
+      font-size: 20px;
+    }
+  }
+  .viewmorerow {
+    font-size: 13px;
+    margin: 0px;
+    font-weight: 400;
+  }
+}
+/*-- Mobile Adjustments --*/
+@media only screen and (max-width: 980px) {
+  .directoryheader {
+    .details {
+      text-align: center;
+    }
+  }
+  .directoryrow {
+    .avatar{
+      display: block;
+      float: none;
+	  margin: 0 auto;
+    }
+    .details {
+      text-align: center;
+    }
+  }
+}

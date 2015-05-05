@@ -1,58 +1,56 @@
-/*--Feed--*/
-.homeheader {
-	margin-top: 60px;
-      margin-bottom: 20px;
-	.headline{
-	  border-bottom: 1px solid #e4edf2;
-      color: #A0A9BE;
-      font-size: 22px;
-      font-weight: 200;
-      padding-bottom: 5px;
-	}
+/*--Immorted Sub Pages--*/
+@import 'pages/feed';
+@import 'pages/sidebar';
+@import 'pages/groups';
+@import 'pages/profile';
+@import 'pages/directory';
+
+/*--Global--*/
+::-webkit-input-placeholder {color: #b7bed0;}
+:-moz-placeholder {color: #b7bed0;}
+::-moz-placeholder {color: #b7bed0;}
+:-ms-input-placeholder { color: #b7bed0;}
+
+body {
+  font-weight: 300;
 }
-.feed {
-  .composerow {
-	  border-bottom: 1px solid #e4edf2;
-	  margin-bottom: 15px;
-	textarea {
-	    margin-bottom: 10px;
-	}
-    .button {
-	    display: inline-block;
-	    float: right;
-	    font-size: 14px;
-	    padding: 10px 15px;
-	    margin-bottom: 10px;
-    }
-    .attach {
-	    display: inline-block;
-      float: right;
-      font-size: 14px;
-      color: #A0A9BE;
-      padding: 5px 15px;
-    }
-  }
-  .userdetails {
+/*--Navbar--*/
+.top-bar {
+  border-bottom: 1px solid #8d0411;
+  .brand {
+    width: 62px;
+    height: 28px;
+    background-size: 62px 28px;
+    -webkit-background-size: 62px 28px;
+    margin: 6px 0px 0px 0px;
+    background-image: url("../../img/navlogo.png");
+  }   
+  .avatar img {
+    border-radius: 3px;
+    border: 1px solid #a30d1b;
     margin: 0px;
-    a {
-	  font-weight: 800;	  
-    }
-    p {
-	  font-size: 12px;
-	  padding-top: 5px;
-      color: #A0A9BE;
-      margin-bottom: 5px;
-    }
+    margin-top: -2px;
+    padding: 0px;
   }
-  .likethis {
-    font-size: 12px;
-    padding-top: 5px;
-    color: #A0A9BE;
-    margin-bottom: 5px;
-  }
-  .commentrow {
-    border-top: 1px solid #e4edf2;
-    padding-top: 10px;
-  }
-  .avatar img {border-radius: 3px;}	
+}
+.homefeed {
+  margin-top: 40px;
+}
+/*--Headlines--*/
+.headline{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  color: #9DA4B6;
+  border-bottom: 1px solid #e4edf2;
+  font-size: 24px;
+  padding-bottom: 15px;
+  font-family: "latolight";
+}
+/*--Groups--*/
+/*--RETINA SUPPORT--*/
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  .top-bar .brand { background-image: url("../../img/navlogo-2x.png");}   
 }
