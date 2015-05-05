@@ -15,6 +15,7 @@ input,textarea,select{
   outline:none;
   width: 100%;
   font-family: "lato" helvetica, arial, sans-serif; 
+  font-weight: 400;
   resize:none;
   -webkit-transition:
     background-color 0.3s ease-out,
@@ -33,13 +34,11 @@ input,textarea,select{
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  &::-webkit-input-placeholder {color: #8ea1bb;}
+  &:-moz-placeholder {color: #8ea1bb;}
+  &::-moz-placeholder {color: #8ea1bb;}
+  &:-ms-input-placeholder {color: #8ea1bb;}
 }
-/* -- Placeholder Text Styling -- */
-	input::-webkit-input-placeholder {color: #6b7c92;}
-	input:-moz-placeholder {color: #6b7c92;}
-	input::-moz-placeholder {color: #6b7c92;}
-	input:-ms-input-placeholder {color: #6b7c92;}
-
 /* Respect enforced amount of rows for textarea */
 textarea[rows] {
   height: auto;
