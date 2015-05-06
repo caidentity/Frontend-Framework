@@ -22,6 +22,18 @@
     }
   }
 }
+.directorynav {
+  width: 60%;
+  margin: 0 auto;
+  li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 12px 22px 12px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
 /*--Directory--*/
 .directoryrow {
   display: inline-block;

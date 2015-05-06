@@ -6,8 +6,7 @@ var concat     = require('gulp-concat');
 var rename     = require('gulp-rename');
 var imagemin   = require('gulp-imagemin');
 
-// TODO: Deprecate these less tasks.
-gulp.task('default', ['styles', 'pages','styles-less', 'pages-less','watch']);
+gulp.task('default', ['styles', 'pages','styles-scss', 'pages-scss','watch']);
 
 gulp.task('styles', function() {
 	return gulp.src('./assets/stylesheets/kit.scss')
@@ -35,22 +34,19 @@ gulp.task('pages', function() {
   .pipe(gulp.dest('./assets/stylesheets/dest'));
 });
 
-// TODO: Deprecate these less tasks.
-gulp.task('styles-less', function() {
+gulp.task('styles-scss', function() {
 	return gulp.src('./assets/stylesheets/kit.scss')
 	.pipe(sass())
 	.pipe(gulp.dest('./assets/stylesheets/dest'));
 });
 
-// TODO: Deprecate these less tasks.
-gulp.task('pages-less', function() {
+gulp.task('pages-scss', function() {
   return gulp.src('./assets/stylesheets/pages.scss')
   .pipe(sass())
   .pipe(gulp.dest('./assets/stylesheets/dest'));
 });
 
 gulp.task('watch', function() {
-  // TODO: Deprecate these less tasks.
-	gulp.watch('./assets/stylesheets/*.scss', ['styles-less','pages-less']);
+	gulp.watch('./assets/stylesheets/*.scss', ['styles-scss','pages-scss']);
 	gulp.watch('./assets/stylesheets/**/*.scss', ['styles','pages']);
 });
