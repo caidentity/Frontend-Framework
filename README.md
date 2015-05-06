@@ -1,7 +1,7 @@
 # Frontend-Framework
 
 ##Getting Started
-first download node and initiazlize with npm install after node is successfuly install gulp via the following commands...
+first download node and initiazlize with npm install after node is successfuly installed go ahead and get gulp up and running via the following commands...
 ```
 npm install --global gulp
 ```
