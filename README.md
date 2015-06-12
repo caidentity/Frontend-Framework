@@ -42,3 +42,4 @@ now install required gulp plugins
 ```
 npm install gulp-sourcemaps gulp-sass gulp-minify-css gulp-concat gulp-rename gulp-imagemin --save-dev
 ```
+after successful install of gulp you can now kick off gulp run gulp this will only run once, so if you want to set it and forget it run gulp watch
