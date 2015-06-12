@@ -38,6 +38,7 @@ npm install --save-dev gulp
 ```
 
 
-- now install required gulp plugins
-
+now install required gulp plugins
+```
 npm install gulp-sourcemaps gulp-sass gulp-minify-css gulp-concat gulp-rename gulp-imagemin --save-dev
+```
