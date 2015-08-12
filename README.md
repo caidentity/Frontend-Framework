@@ -1,15 +1,10 @@
 # Frontend-Framework
+This is a base frontend kit to help get started on various projects. Including base stylesheets and a living styleguide
 
 ##Getting Started
-first download node and initiazlize with npm install after node is successfuly installed go ahead and get gulp up and running via the following commands...
-```
-npm install --global gulp
-```
-```
-npm install --save-dev gulp
-```
-```
-npm install gulp-sourcemaps gulp-sass gulp-minify-css gulp-concat gulp-rename gulp-imagemin --save-dev
-```
+0. Install NodeJs version V0.12.1
+1. ``npm install -g npm``: get the latest version of npm.
+2. ``npm install``
+3. ``gulp``
 
-after successful install of gulp you can now kick off gulp run `gulp` this will only run once, so if you want to set it and forget it run `gulp watch`
+after successful install of NodeJs and all modules you can then kickoff the kit by running ``gulp run-webserver`` this will then open your default browser and startup ``http://localhost:9876``
