@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend Foundation Demo</title>
+  <!--[if IE]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/jquery.cookie/src/jquery.cookie.js"></script>
+  <script src="../node_modules/underscore/underscore.js"></script>
+  <script src="../node_modules/backbone/backbone.js"></script>
+  <script src="../node_modules/backbone.marionette/lib/backbone.marionette.js"></script>
+  <script src="../node_modules/lz-string/libs/lz-string.js"></script>
+  <script src="../build/build-frontend-foundation.js"></script>
+  <script>
+  /**
+   * Example
+   */
+
+  // Extend the Foundation
+  var ExtendedFrontendFoundationApp = E.Foundation.extend({
+    projectName: 'ExtendedFrontendFoundationApp'
+  });
+
+  // Create a new instance of your newly-minted App
+  var YourApp = new ExtendedFrontendFoundationApp({
+    config : {
+      url_options: {
+        host: "https://www.edmobranch.com",
+        prefix: ''
+      },
+      api_host: "https://api.edmodoqabranch.com",
+      oauth: {
+        client_id: "114c3abbb1279f0fffdd6f5374d787fd693d4480916c132f78a2f1e2dd128461",
+        auth_url: 'https://api.edmodoqabranch.com/oauth/authorize',
+        scope: 'all',
+        callback_path: '/demo/oauth_iframe_callback.html'
+      },
+      debug_level: 1
+    }
+  });
+
+  YourApp.start();
+  </script>
+</body>
+</html>

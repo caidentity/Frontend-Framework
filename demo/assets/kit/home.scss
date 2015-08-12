@@ -1,0 +1,46 @@
+@import "../../stylesheets/common/_constants.scss";
+
+/*-------------- HOME HEADER ---------------*/
+.homehead {
+  width:100%;
+  height: 420px;
+  background-position: center top;
+  background: #276bb0;
+  border-bottom: 1px solid #5a84ae;
+  margin-bottom: 20px;
+  padding-top:100px;
+  h1 {
+    font-family: "lato";
+    font-weight: 300;
+    padding: 70px 0px 40px 0px;
+    margin: 0;
+    color: #fff;
+    font-size: 54px;
+    line-height: 20px;
+  }
+  p {
+    width: 400px;
+    font-family: "lato";
+    font-weight: 300;
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .btn, .btn:hover {
+    color:#fff;
+    border-color:#63a1d3;
+    padding: 16px 40px;
+    margin-top:30px;
+    font-size: 15px;
+  }
+  .img {
+    display: inline-block;
+    float:right;
+    width:369px;
+    height: 270px;
+    background-position: center top;
+    background-size: 369px 270px;
+    -webkit-background-size: 369px 270px;
+    background-image: url("img/headerlogo.png");
+  }
+}

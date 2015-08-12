@@ -1,0 +1,42 @@
+#container404 {
+	margin: 10px auto;
+	padding: 50px 200px 80px;
+	text-align: center;
+	.img {
+		width: 400px;
+		height:400px;
+		background: #ccc;
+		margin: 0 auto;
+	}
+	h1 {
+		font-weight: 200;
+		margin: 50px 0 30px;
+		color: #363d45;
+		font-size: 28px;
+	}
+	.description {
+		margin-top: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		font-size: 16px;
+		font-weight: 200;
+		color: #363d45;
+	}
+}
+#footer404 {
+	border-top: 1px solid #edeff2;
+	padding-top: 24px;
+	margin-top: 27px;
+	a {
+		font-size: 14px;
+		color: #4c85cd;
+	}
+	.bullet {
+		display: inline-block;
+		background: #bec6cf;
+		margin: 0 12px 3px 12px;
+		width: 3px;
+		height: 3px;
+		border-radius: 2px;
+	}
+}

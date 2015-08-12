@@ -1,0 +1,1802 @@
+/*---- MIXINS ---*/
+/**
+ * Soon will add mixins here
+ */
+/*---- COMMON ---*/
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1020px; } }
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  width: auto;
+  max-width: none;
+  margin-left: -0.4em;
+  margin-right: -0.4em; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding: 0 0.4em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.col-xs-11 {
+  width: 91.66667%; }
+
+.col-xs-10 {
+  width: 83.33333%; }
+
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-8 {
+  width: 66.66667%; }
+
+.col-xs-7 {
+  width: 58.33333%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-5 {
+  width: 41.66667%; }
+
+.col-xs-4 {
+  width: 33.33333%; }
+
+.col-xs-3 {
+  width: 25%; }
+
+.col-xs-2 {
+  width: 16.66667%; }
+
+.col-xs-1 {
+  width: 8.33333%; }
+
+.col-xs-pull-12 {
+  right: 100%; }
+
+.col-xs-pull-11 {
+  right: 91.66667%; }
+
+.col-xs-pull-10 {
+  right: 83.33333%; }
+
+.col-xs-pull-9 {
+  right: 75%; }
+
+.col-xs-pull-8 {
+  right: 66.66667%; }
+
+.col-xs-pull-7 {
+  right: 58.33333%; }
+
+.col-xs-pull-6 {
+  right: 50%; }
+
+.col-xs-pull-5 {
+  right: 41.66667%; }
+
+.col-xs-pull-4 {
+  right: 33.33333%; }
+
+.col-xs-pull-3 {
+  right: 25%; }
+
+.col-xs-pull-2 {
+  right: 16.66667%; }
+
+.col-xs-pull-1 {
+  right: 8.33333%; }
+
+.col-xs-pull-0 {
+  right: auto; }
+
+.col-xs-push-12 {
+  left: 100%; }
+
+.col-xs-push-11 {
+  left: 91.66667%; }
+
+.col-xs-push-10 {
+  left: 83.33333%; }
+
+.col-xs-push-9 {
+  left: 75%; }
+
+.col-xs-push-8 {
+  left: 66.66667%; }
+
+.col-xs-push-7 {
+  left: 58.33333%; }
+
+.col-xs-push-6 {
+  left: 50%; }
+
+.col-xs-push-5 {
+  left: 41.66667%; }
+
+.col-xs-push-4 {
+  left: 33.33333%; }
+
+.col-xs-push-3 {
+  left: 25%; }
+
+.col-xs-push-2 {
+  left: 16.66667%; }
+
+.col-xs-push-1 {
+  left: 8.33333%; }
+
+.col-xs-push-0 {
+  left: auto; }
+
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+.col-xs-offset-11 {
+  margin-left: 91.66667%; }
+
+.col-xs-offset-10 {
+  margin-left: 83.33333%; }
+
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
+.col-xs-offset-8 {
+  margin-left: 66.66667%; }
+
+.col-xs-offset-7 {
+  margin-left: 58.33333%; }
+
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+.col-xs-offset-5 {
+  margin-left: 41.66667%; }
+
+.col-xs-offset-4 {
+  margin-left: 33.33333%; }
+
+.col-xs-offset-3 {
+  margin-left: 25%; }
+
+.col-xs-offset-2 {
+  margin-left: 16.66667%; }
+
+.col-xs-offset-1 {
+  margin-left: 8.33333%; }
+
+.col-xs-offset-0 {
+  margin-left: 0; }
+
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left; }
+  .col-sm-12 {
+    width: 100%; }
+  .col-sm-11 {
+    width: 91.66667%; }
+  .col-sm-10 {
+    width: 83.33333%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-8 {
+    width: 66.66667%; }
+  .col-sm-7 {
+    width: 58.33333%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-5 {
+    width: 41.66667%; }
+  .col-sm-4 {
+    width: 33.33333%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-2 {
+    width: 16.66667%; }
+  .col-sm-1 {
+    width: 8.33333%; }
+  .col-sm-pull-12 {
+    right: 100%; }
+  .col-sm-pull-11 {
+    right: 91.66667%; }
+  .col-sm-pull-10 {
+    right: 83.33333%; }
+  .col-sm-pull-9 {
+    right: 75%; }
+  .col-sm-pull-8 {
+    right: 66.66667%; }
+  .col-sm-pull-7 {
+    right: 58.33333%; }
+  .col-sm-pull-6 {
+    right: 50%; }
+  .col-sm-pull-5 {
+    right: 41.66667%; }
+  .col-sm-pull-4 {
+    right: 33.33333%; }
+  .col-sm-pull-3 {
+    right: 25%; }
+  .col-sm-pull-2 {
+    right: 16.66667%; }
+  .col-sm-pull-1 {
+    right: 8.33333%; }
+  .col-sm-pull-0 {
+    right: auto; }
+  .col-sm-push-12 {
+    left: 100%; }
+  .col-sm-push-11 {
+    left: 91.66667%; }
+  .col-sm-push-10 {
+    left: 83.33333%; }
+  .col-sm-push-9 {
+    left: 75%; }
+  .col-sm-push-8 {
+    left: 66.66667%; }
+  .col-sm-push-7 {
+    left: 58.33333%; }
+  .col-sm-push-6 {
+    left: 50%; }
+  .col-sm-push-5 {
+    left: 41.66667%; }
+  .col-sm-push-4 {
+    left: 33.33333%; }
+  .col-sm-push-3 {
+    left: 25%; }
+  .col-sm-push-2 {
+    left: 16.66667%; }
+  .col-sm-push-1 {
+    left: 8.33333%; }
+  .col-sm-push-0 {
+    left: auto; }
+  .col-sm-offset-12 {
+    margin-left: 100%; }
+  .col-sm-offset-11 {
+    margin-left: 91.66667%; }
+  .col-sm-offset-10 {
+    margin-left: 83.33333%; }
+  .col-sm-offset-9 {
+    margin-left: 75%; }
+  .col-sm-offset-8 {
+    margin-left: 66.66667%; }
+  .col-sm-offset-7 {
+    margin-left: 58.33333%; }
+  .col-sm-offset-6 {
+    margin-left: 50%; }
+  .col-sm-offset-5 {
+    margin-left: 41.66667%; }
+  .col-sm-offset-4 {
+    margin-left: 33.33333%; }
+  .col-sm-offset-3 {
+    margin-left: 25%; }
+  .col-sm-offset-2 {
+    margin-left: 16.66667%; }
+  .col-sm-offset-1 {
+    margin-left: 8.33333%; }
+  .col-sm-offset-0 {
+    margin-left: 0; } }
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left; }
+  .col-md-12 {
+    width: 100%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-pull-12 {
+    right: 100%; }
+  .col-md-pull-11 {
+    right: 91.66667%; }
+  .col-md-pull-10 {
+    right: 83.33333%; }
+  .col-md-pull-9 {
+    right: 75%; }
+  .col-md-pull-8 {
+    right: 66.66667%; }
+  .col-md-pull-7 {
+    right: 58.33333%; }
+  .col-md-pull-6 {
+    right: 50%; }
+  .col-md-pull-5 {
+    right: 41.66667%; }
+  .col-md-pull-4 {
+    right: 33.33333%; }
+  .col-md-pull-3 {
+    right: 25%; }
+  .col-md-pull-2 {
+    right: 16.66667%; }
+  .col-md-pull-1 {
+    right: 8.33333%; }
+  .col-md-pull-0 {
+    right: auto; }
+  .col-md-push-12 {
+    left: 100%; }
+  .col-md-push-11 {
+    left: 91.66667%; }
+  .col-md-push-10 {
+    left: 83.33333%; }
+  .col-md-push-9 {
+    left: 75%; }
+  .col-md-push-8 {
+    left: 66.66667%; }
+  .col-md-push-7 {
+    left: 58.33333%; }
+  .col-md-push-6 {
+    left: 50%; }
+  .col-md-push-5 {
+    left: 41.66667%; }
+  .col-md-push-4 {
+    left: 33.33333%; }
+  .col-md-push-3 {
+    left: 25%; }
+  .col-md-push-2 {
+    left: 16.66667%; }
+  .col-md-push-1 {
+    left: 8.33333%; }
+  .col-md-push-0 {
+    left: auto; }
+  .col-md-offset-12 {
+    margin-left: 100%; }
+  .col-md-offset-11 {
+    margin-left: 91.66667%; }
+  .col-md-offset-10 {
+    margin-left: 83.33333%; }
+  .col-md-offset-9 {
+    margin-left: 75%; }
+  .col-md-offset-8 {
+    margin-left: 66.66667%; }
+  .col-md-offset-7 {
+    margin-left: 58.33333%; }
+  .col-md-offset-6 {
+    margin-left: 50%; }
+  .col-md-offset-5 {
+    margin-left: 41.66667%; }
+  .col-md-offset-4 {
+    margin-left: 33.33333%; }
+  .col-md-offset-3 {
+    margin-left: 25%; }
+  .col-md-offset-2 {
+    margin-left: 16.66667%; }
+  .col-md-offset-1 {
+    margin-left: 8.33333%; }
+  .col-md-offset-0 {
+    margin-left: 0; } }
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left; }
+  .col-lg-12 {
+    width: 100%; }
+  .col-lg-11 {
+    width: 91.66667%; }
+  .col-lg-10 {
+    width: 83.33333%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-8 {
+    width: 66.66667%; }
+  .col-lg-7 {
+    width: 58.33333%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-5 {
+    width: 41.66667%; }
+  .col-lg-4 {
+    width: 33.33333%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-2 {
+    width: 16.66667%; }
+  .col-lg-1 {
+    width: 8.33333%; }
+  .col-lg-pull-12 {
+    right: 100%; }
+  .col-lg-pull-11 {
+    right: 91.66667%; }
+  .col-lg-pull-10 {
+    right: 83.33333%; }
+  .col-lg-pull-9 {
+    right: 75%; }
+  .col-lg-pull-8 {
+    right: 66.66667%; }
+  .col-lg-pull-7 {
+    right: 58.33333%; }
+  .col-lg-pull-6 {
+    right: 50%; }
+  .col-lg-pull-5 {
+    right: 41.66667%; }
+  .col-lg-pull-4 {
+    right: 33.33333%; }
+  .col-lg-pull-3 {
+    right: 25%; }
+  .col-lg-pull-2 {
+    right: 16.66667%; }
+  .col-lg-pull-1 {
+    right: 8.33333%; }
+  .col-lg-pull-0 {
+    right: auto; }
+  .col-lg-push-12 {
+    left: 100%; }
+  .col-lg-push-11 {
+    left: 91.66667%; }
+  .col-lg-push-10 {
+    left: 83.33333%; }
+  .col-lg-push-9 {
+    left: 75%; }
+  .col-lg-push-8 {
+    left: 66.66667%; }
+  .col-lg-push-7 {
+    left: 58.33333%; }
+  .col-lg-push-6 {
+    left: 50%; }
+  .col-lg-push-5 {
+    left: 41.66667%; }
+  .col-lg-push-4 {
+    left: 33.33333%; }
+  .col-lg-push-3 {
+    left: 25%; }
+  .col-lg-push-2 {
+    left: 16.66667%; }
+  .col-lg-push-1 {
+    left: 8.33333%; }
+  .col-lg-push-0 {
+    left: auto; }
+  .col-lg-offset-12 {
+    margin-left: 100%; }
+  .col-lg-offset-11 {
+    margin-left: 91.66667%; }
+  .col-lg-offset-10 {
+    margin-left: 83.33333%; }
+  .col-lg-offset-9 {
+    margin-left: 75%; }
+  .col-lg-offset-8 {
+    margin-left: 66.66667%; }
+  .col-lg-offset-7 {
+    margin-left: 58.33333%; }
+  .col-lg-offset-6 {
+    margin-left: 50%; }
+  .col-lg-offset-5 {
+    margin-left: 41.66667%; }
+  .col-lg-offset-4 {
+    margin-left: 33.33333%; }
+  .col-lg-offset-3 {
+    margin-left: 25%; }
+  .col-lg-offset-2 {
+    margin-left: 16.66667%; }
+  .col-lg-offset-1 {
+    margin-left: 8.33333%; }
+  .col-lg-offset-0 {
+    margin-left: 0; } }
+
+/**
+ * Transitions and Behaviours
+ */
+/**
+ * <div class="can-be-busy">
+ *   ...
+ * </div>
+ */
+.can-be-busy {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out; }
+  .can-be-busy.is-busy {
+    opacity: 0.3; }
+
+/*---- Base ---*/
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+/**
+ * Standard means of messaging the user with
+ * <div class="message">
+ *   <span> .... </span>
+ * </div>
+ */
+.message {
+  width: 100%;
+  text-align: center; }
+  .message span {
+    color: #629035;
+    background-color: #eaf4e0;
+    border: 1px solid #79b241;
+    padding: 8px 25px 8px 25px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); }
+  .message ul, .message ol {
+    margin: 0;
+    list-style: disc; }
+  .message.error {
+    background: none repeat scroll 0 0 #f9e3e4;
+    color: #d63a40;
+    border: 1px solid #d63a40;
+    border-radius: 3px;
+    padding: 8px 0;
+    margin: 0 0 5px 0; }
+    .message.error span {
+      background: none;
+      border: none;
+      margin: 0;
+      color: #d63a40; }
+      .message.error span a {
+        color: white;
+        text-decoration: underline; }
+
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+/*----------------------*/
+/*---- WHITE BUTTON ----*/
+/*----------------------*/
+.btn, .btn:visited, a.btn, a.btn:visited {
+  border-radius: 3px;
+  padding: 6px 18px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #2077cf;
+  border: 1px solid #c3c9d1;
+  background-color: #fff;
+  -webkit-transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out, background 0.2s ease-in-out, border 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out, background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out, background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+  .btn:hover, .btn:visited:hover, a.btn:hover, a.btn:visited:hover {
+    color: #2077cf;
+    border: 1px solid #2077cf;
+    background-color: #F0F8FF; }
+  .btn:active, .btn:visited:active, a.btn:active, a.btn:visited:active {
+    color: #2077cf;
+    box-shadow: 0px 0px 6px rgba(0, 1, 1, 0.15) inset; }
+  .btn.disabled, .btn.is-disabled, .btn:visited.disabled, .btn:visited.is-disabled, a.btn.disabled, a.btn.is-disabled, a.btn:visited.disabled, a.btn:visited.is-disabled {
+    opacity: 0.3;
+    cursor: default;
+    box-shadow: none;
+    pointer-events: none;
+    color: #8890a2; }
+  .btn.btn-mini, .btn:visited.btn-mini, a.btn.btn-mini, a.btn:visited.btn-mini {
+    padding: 2px 10px; }
+  .btn.btn-large, .btn:visited.btn-large, a.btn.btn-large, a.btn:visited.btn-large {
+    padding: 14px 30px;
+    font-size: 15px; }
+  .btn.btn-full, .btn:visited.btn-full, a.btn.btn-full, a.btn:visited.btn-full {
+    width: 100%;
+    padding: 10px 0px; }
+
+/*-------------------*/
+/*-- BORDER BUTTON --*/
+/*-------------------*/
+.border-btn, .border-btn:visited, a.border-btn, a.border-btn:visited {
+  color: #5d718a;
+  border: 1px solid #aabace;
+  background-color: transparent; }
+
+.border-btn:hover, a.border-btn:hover {
+  color: #3f5673;
+  border: 1px solid #aabace;
+  background-color: rgba(134, 151, 174, 0.1); }
+
+.border-btn:active, a.border-btn:active {
+  color: #5d718a;
+  border: 1px solid #aabace;
+  background-color: rgba(134, 151, 174, 0.51); }
+
+/*------------------------*/
+/*------ BLUE BUTTON -----*/
+/*------------------------*/
+.blue-btn, .blue-btn:focus, .blue-btn:visited, a.blue-btn, a.blue-btn:visited {
+  color: #fff;
+  border: 1px solid #2077cf;
+  border-bottom: 2px solid #2077cf;
+  padding-bottom: -2px;
+  background-color: #2077cf; }
+
+.blue-btn:hover, a.blue-btn:hover {
+  color: #fff;
+  border: 1px solid #1D70C4;
+  border-bottom: 2px solid #0E418C;
+  background-color: #1D70C4; }
+
+.blue-btn:active, a.blue-btn:active {
+  color: #fff;
+  border: 1px solid #1D70C4;
+  border-bottom: 2px solid #0E418C;
+  background-color: #1467BC; }
+
+.btn.blue-btn.disabled, .btn.blue-btn.disabled:hover, .btn.blue-btn.disabled:active {
+  border: 1px solid rgba(37, 89, 164, 0.57);
+  background: rgba(113, 170, 228, 0.57);
+  box-shadow: 0 0px 2px 0 rgba(113, 170, 228, 0.57) inset;
+  color: #fff; }
+
+.blue-btn-flat, .blue-btn-flat:focus, .blue-btn-flat:visited, a.blue-btn-flat, a.blue-btn-flat:visited {
+  color: white;
+  background: #3784d3;
+  border-radius: 1px;
+  border: 0;
+  box-shadow: none;
+  text-shadow: none; }
+
+.blue-btn-flat:hover, a.blue-btn-flat:hover {
+  background: #2e7ac7;
+  box-shadow: none;
+  text-shadow: none;
+  border: 0; }
+
+.blue-btn-flat:active, a.blue-btn-flat:active {
+  background: #256db6; }
+
+/*------------------------*/
+/*----- GREEN BUTTON -----*/
+/*------------------------*/
+.green-btn, .green-btn:visited, a.green-btn, a.green-btn:visited {
+  color: #fff;
+  border: 1px solid #79b241;
+  border-bottom: 2px solid #79b241;
+  padding-bottom: -2px;
+  background-color: #79b241; }
+
+.green-btn:hover, a.green-btn:hover {
+  color: #fff;
+  border: 1px solid #73AC39;
+  border-bottom: 2px solid #5B8C2A;
+  background-color: #73AC39; }
+
+.green-btn:active, a.green-btn:active {
+  color: #fff;
+  border: 1px solid #6DA336;
+  border-bottom: 2px solid #5B8C2A;
+  background-color: #669F2D; }
+
+.btn.green-btn.disabled, .btn.green-btn.disabled:hover, .btn.green-btn.disabled:active {
+  border: 1px solid rgba(80, 139, 23, 0.57);
+  background: rgba(167, 205, 123, 0.57);
+  color: #47840f; }
+
+/*----------------------*/
+/*----- RED BUTTON -----*/
+/*----------------------*/
+.red-btn, .red-btn:visited, a.red-btn, a.red-btn:visited {
+  color: #fff;
+  border: 1px solid #d63a40;
+  border-bottom: 2px solid #d63a40;
+  padding-bottom: -2px;
+  background-color: #d63a40; }
+
+.red-btn:hover, a.red-btn:hover {
+  color: #fff;
+  border: 1px solid #df3d35;
+  border-bottom: 2px solid #C12B24;
+  background-color: #df3d35; }
+
+.red-btn:active, a.red-btn:active {
+  color: #fff;
+  border: 1px solid #df3d35;
+  border-bottom: 2px solid #C12B24;
+  background-color: #df3d35; }
+
+.btn.red-btn.disabled, .btn.red-btn.disabled:hover, .btn.red-btn.disabled:active {
+  border: 1px solid rgba(153, 16, 6, 0.57);
+  background: rgba(223, 134, 124, 0.57);
+  box-shadow: 0 0px 2px 0 rgba(223, 134, 124, 0.57) inset;
+  color: #fff; }
+
+/*------------------------*/
+/*----- BUTTON GROUP -----*/
+/*------------------------*/
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; }
+  .btn-group .btn, .btn-group-vertical .btn {
+    position: relative;
+    float: left;
+    margin-left: -1px; }
+    .btn-group .btn:hover, .btn-group .btn:focus, .btn-group .btn:active, .btn-group-vertical .btn:hover, .btn-group-vertical .btn:focus, .btn-group-vertical .btn:active {
+      z-index: 2;
+      background: #F0F8FF; }
+    .btn-group .btn:first-child, .btn-group-vertical .btn:first-child {
+      margin-left: 0; }
+    .btn-group .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group-vertical .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+      border-radius: 0; }
+      .btn-group .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) .btn, .btn-group-vertical .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) .btn {
+        border-radius: 0; }
+    .btn-group .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group-vertical .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
+    .btn-group .btn:last-child:not(:first-child), .btn-group .btn .dropdown-toggle:not(:first-child), .btn-group-vertical .btn:last-child:not(:first-child), .btn-group-vertical .btn .dropdown-toggle:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0; }
+  .btn-group:first-child:not(:last-child) .btn:last-child, .btn-group .dropdown-toggle, .btn-group-vertical:first-child:not(:last-child) .btn:last-child, .btn-group-vertical .dropdown-toggle {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+  .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical:last-child:not(:first-child) > .btn:first-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+
+.btn-toolbar {
+  margin-left: -5px; }
+  .btn-toolbar .btn, .btn-toolbar .btn-group, .btn-toolbar .input-group {
+    float: left;
+    margin-left: 5px; }
+
+.action-buttons {
+  outline: none;
+  /**
+   * When there are only 2 buttons to choose from ....
+   */ }
+  .action-buttons .selected {
+    color: #2077cf;
+    border: 1px solid #2077cf;
+    background-color: #F0F8FF; }
+  .action-buttons.col-2 .btn {
+    width: 48%; }
+    .action-buttons.col-2 .btn:last-child {
+      float: right; }
+
+/*LATO -------------------------------------*/
+@font-face {
+  font-family: 'LatoBold';
+  src: url('//assets.edmodo.com/fonts/lato-bold-webfont.eot');
+  src: url('//assets.edmodo.com/fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('//assets.edmodo.com/fonts/lato-bold-webfont.woff') format('woff'), url('//assets.edmodo.com/fonts/lato-bold-webfont.ttf') format('truetype'), url('//assets.edmodo.com/fonts/lato-bold-webfont.svg#latolight') format('svg');
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url('//assets.edmodo.com/fonts/lato.eot');
+  src: url('//assets.edmodo.com/fonts/lato.eot?#iefix') format('embedded-opentype'), url('//assets.edmodo.com/fonts/lato.svg') format('svg'), url('//assets.edmodo.com/fonts/lato.woff') format('woff'), url('//assets.edmodo.com/fonts/lato.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'LatoLight';
+  src: url('//assets.edmodo.com/fonts/Lato-Light.eot');
+  /* IE9 Compat Modes */
+  src: url('//assets.edmodo.com/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), url('//assets.edmodo.com/fonts/Lato-Light.woff') format('woff'), url('//assets.edmodo.com/fonts/Lato-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'LatoThin';
+  src: url('//assets.edmodo.com/fonts/Lato-Thin.eot');
+  /* IE9 Compat Modes */
+  src: url('//assets.edmodo.com/fonts/Lato-Thin.eot?#iefix') format('embedded-opentype'), url('//assets.edmodo.com/fonts/Lato-Thin.woff') format('woff'), url('//assets.edmodo.com/fonts/Lato-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/*ALEO -------------------------------------*/
+@font-face {
+  font-family: 'aleolight';
+  src: url('//assets.edmodo.com/fonts/Aleo-Light-webfont.eot');
+  src: url('//assets.edmodo.com/fonts/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'), url('//assets.edmodo.com/fonts/Aleo-Light-webfont.svg#aleolight') format('svg'), url('//assets.edmodo.com/fonts/Aleo-Light-webfont.woff') format('woff'), url('//assets.edmodo.com/fonts/Aleo-Light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'aleoregular';
+  src: url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.eot');
+  src: url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.svg#aleoregular') format('svg'), url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.woff') format('woff'), url('//assets.edmodo.com/fonts/Aleo-Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+/* -------------- Primary Input Styling ---------------*/
+input, textarea, select {
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #dfe4e8;
+  border-radius: 3px;
+  background: #F8F9FA;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.07) inset;
+  padding: 3px;
+  outline: none;
+  resize: none;
+  -moz-transition-property: background, border, box-shadow;
+  -moz-transition-duration: .2s;
+  -webkit-transition-property: background, border, box-shadow;
+  -webkit-transition-duration: .2s;
+  transition-property: background, border, box-shadow;
+  transition-duration: .2s;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: #8890A2; }
+  input:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
+    color: #8890A2; }
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    color: #8890A2; }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+    color: #8890A2; }
+  input:disabled, textarea:disabled, select:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+  input:focus, textarea:focus, select:focus {
+    background: #fff;
+    border: 1px solid #6fa6df;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px rgba(246, 250, 253, 0.1); }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input.input-error, textarea.input-error, select.input-error {
+  border: 1px solid #d93f44;
+  background: #ffebeb;
+  color: #d63a40; }
+  input.input-error::-webkit-input-placeholder, textarea.input-error::-webkit-input-placeholder, select.input-error::-webkit-input-placeholder {
+    color: #d63a40; }
+  input.input-error:-moz-placeholder, textarea.input-error:-moz-placeholder, select.input-error:-moz-placeholder {
+    color: #d63a40; }
+  input.input-error::-moz-placeholder, textarea.input-error::-moz-placeholder, select.input-error::-moz-placeholder {
+    color: #d63a40; }
+  input.input-error:-ms-input-placeholder, textarea.input-error:-ms-input-placeholder, select.input-error:-ms-input-placeholder {
+    color: #d63a40; }
+
+/* -------------- Sunken Input Styling ---------------*/
+.sunken {
+  background: #f8f9fa; }
+  .sunken input, .sunken textarea {
+    background: #fff;
+    border: 1px solid #d2d6d8; }
+    .sunken input:focus, .sunken textarea:focus {
+      background: #fff;
+      border: 1px solid #6fa6df;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px rgba(246, 250, 253, 0.1); }
+  .sunken .placeholder-container input:focus, .sunken .placeholder-container textarea:focus {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    margin: 0; }
+
+/* -------------- Form Control ---------------*/
+.form-control {
+  border-radius: 2px;
+  color: #A5A8B1;
+  font-size: 13px;
+  border-color: #D5DBE1; }
+
+.form-control:focus, .has-success .form-control:focus, .has-warning .form-control:focus, .has-error .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/**
+ * Search box
+ */
+input.form-control.search-input {
+  height: 32px;
+  border-radius: 2px;
+  padding-right: 35px;
+  background-image: url('/images/topbar/search-separator.png');
+  background-position: right 50%;
+  background-repeat: no-repeat; }
+
+.gradient-input {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f7f7f7));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 );
+  border: 1px solid #d5dbe1;
+  border-radius: 2px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05); }
+
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+/*----------------------*/
+/*---- WHITE BUTTON ----*/
+/*----------------------*/
+.btn, .btn:visited, a.btn, a.btn:visited {
+  border-radius: 3px;
+  padding: 6px 18px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #2077cf;
+  border: 1px solid #c3c9d1;
+  background-color: #fff;
+  -webkit-transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out, background 0.2s ease-in-out, border 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out, background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out, background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+  .btn:hover, .btn:visited:hover, a.btn:hover, a.btn:visited:hover {
+    color: #2077cf;
+    border: 1px solid #2077cf;
+    background-color: #F0F8FF; }
+  .btn:active, .btn:visited:active, a.btn:active, a.btn:visited:active {
+    color: #2077cf;
+    box-shadow: 0px 0px 6px rgba(0, 1, 1, 0.15) inset; }
+  .btn.disabled, .btn.is-disabled, .btn:visited.disabled, .btn:visited.is-disabled, a.btn.disabled, a.btn.is-disabled, a.btn:visited.disabled, a.btn:visited.is-disabled {
+    opacity: 0.3;
+    cursor: default;
+    box-shadow: none;
+    pointer-events: none;
+    color: #8890a2; }
+  .btn.btn-mini, .btn:visited.btn-mini, a.btn.btn-mini, a.btn:visited.btn-mini {
+    padding: 2px 10px; }
+  .btn.btn-large, .btn:visited.btn-large, a.btn.btn-large, a.btn:visited.btn-large {
+    padding: 14px 30px;
+    font-size: 15px; }
+  .btn.btn-full, .btn:visited.btn-full, a.btn.btn-full, a.btn:visited.btn-full {
+    width: 100%;
+    padding: 10px 0px; }
+
+/*-------------------*/
+/*-- BORDER BUTTON --*/
+/*-------------------*/
+.border-btn, .border-btn:visited, a.border-btn, a.border-btn:visited {
+  color: #5d718a;
+  border: 1px solid #aabace;
+  background-color: transparent; }
+
+.border-btn:hover, a.border-btn:hover {
+  color: #3f5673;
+  border: 1px solid #aabace;
+  background-color: rgba(134, 151, 174, 0.1); }
+
+.border-btn:active, a.border-btn:active {
+  color: #5d718a;
+  border: 1px solid #aabace;
+  background-color: rgba(134, 151, 174, 0.51); }
+
+/*------------------------*/
+/*------ BLUE BUTTON -----*/
+/*------------------------*/
+.blue-btn, .blue-btn:focus, .blue-btn:visited, a.blue-btn, a.blue-btn:visited {
+  color: #fff;
+  border: 1px solid #2077cf;
+  border-bottom: 2px solid #2077cf;
+  padding-bottom: -2px;
+  background-color: #2077cf; }
+
+.blue-btn:hover, a.blue-btn:hover {
+  color: #fff;
+  border: 1px solid #1D70C4;
+  border-bottom: 2px solid #0E418C;
+  background-color: #1D70C4; }
+
+.blue-btn:active, a.blue-btn:active {
+  color: #fff;
+  border: 1px solid #1D70C4;
+  border-bottom: 2px solid #0E418C;
+  background-color: #1467BC; }
+
+.btn.blue-btn.disabled, .btn.blue-btn.disabled:hover, .btn.blue-btn.disabled:active {
+  border: 1px solid rgba(37, 89, 164, 0.57);
+  background: rgba(113, 170, 228, 0.57);
+  box-shadow: 0 0px 2px 0 rgba(113, 170, 228, 0.57) inset;
+  color: #fff; }
+
+.blue-btn-flat, .blue-btn-flat:focus, .blue-btn-flat:visited, a.blue-btn-flat, a.blue-btn-flat:visited {
+  color: white;
+  background: #3784d3;
+  border-radius: 1px;
+  border: 0;
+  box-shadow: none;
+  text-shadow: none; }
+
+.blue-btn-flat:hover, a.blue-btn-flat:hover {
+  background: #2e7ac7;
+  box-shadow: none;
+  text-shadow: none;
+  border: 0; }
+
+.blue-btn-flat:active, a.blue-btn-flat:active {
+  background: #256db6; }
+
+/*------------------------*/
+/*----- GREEN BUTTON -----*/
+/*------------------------*/
+.green-btn, .green-btn:visited, a.green-btn, a.green-btn:visited {
+  color: #fff;
+  border: 1px solid #79b241;
+  border-bottom: 2px solid #79b241;
+  padding-bottom: -2px;
+  background-color: #79b241; }
+
+.green-btn:hover, a.green-btn:hover {
+  color: #fff;
+  border: 1px solid #73AC39;
+  border-bottom: 2px solid #5B8C2A;
+  background-color: #73AC39; }
+
+.green-btn:active, a.green-btn:active {
+  color: #fff;
+  border: 1px solid #6DA336;
+  border-bottom: 2px solid #5B8C2A;
+  background-color: #669F2D; }
+
+.btn.green-btn.disabled, .btn.green-btn.disabled:hover, .btn.green-btn.disabled:active {
+  border: 1px solid rgba(80, 139, 23, 0.57);
+  background: rgba(167, 205, 123, 0.57);
+  color: #47840f; }
+
+/*----------------------*/
+/*----- RED BUTTON -----*/
+/*----------------------*/
+.red-btn, .red-btn:visited, a.red-btn, a.red-btn:visited {
+  color: #fff;
+  border: 1px solid #d63a40;
+  border-bottom: 2px solid #d63a40;
+  padding-bottom: -2px;
+  background-color: #d63a40; }
+
+.red-btn:hover, a.red-btn:hover {
+  color: #fff;
+  border: 1px solid #df3d35;
+  border-bottom: 2px solid #C12B24;
+  background-color: #df3d35; }
+
+.red-btn:active, a.red-btn:active {
+  color: #fff;
+  border: 1px solid #df3d35;
+  border-bottom: 2px solid #C12B24;
+  background-color: #df3d35; }
+
+.btn.red-btn.disabled, .btn.red-btn.disabled:hover, .btn.red-btn.disabled:active {
+  border: 1px solid rgba(153, 16, 6, 0.57);
+  background: rgba(223, 134, 124, 0.57);
+  box-shadow: 0 0px 2px 0 rgba(223, 134, 124, 0.57) inset;
+  color: #fff; }
+
+/*------------------------*/
+/*----- BUTTON GROUP -----*/
+/*------------------------*/
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; }
+  .btn-group .btn, .btn-group-vertical .btn {
+    position: relative;
+    float: left;
+    margin-left: -1px; }
+    .btn-group .btn:hover, .btn-group .btn:focus, .btn-group .btn:active, .btn-group-vertical .btn:hover, .btn-group-vertical .btn:focus, .btn-group-vertical .btn:active {
+      z-index: 2;
+      background: #F0F8FF; }
+    .btn-group .btn:first-child, .btn-group-vertical .btn:first-child {
+      margin-left: 0; }
+    .btn-group .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group-vertical .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+      border-radius: 0; }
+      .btn-group .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) .btn, .btn-group-vertical .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) .btn {
+        border-radius: 0; }
+    .btn-group .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group-vertical .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
+    .btn-group .btn:last-child:not(:first-child), .btn-group .btn .dropdown-toggle:not(:first-child), .btn-group-vertical .btn:last-child:not(:first-child), .btn-group-vertical .btn .dropdown-toggle:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0; }
+  .btn-group:first-child:not(:last-child) .btn:last-child, .btn-group .dropdown-toggle, .btn-group-vertical:first-child:not(:last-child) .btn:last-child, .btn-group-vertical .dropdown-toggle {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+  .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical:last-child:not(:first-child) > .btn:first-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+
+.btn-toolbar {
+  margin-left: -5px; }
+  .btn-toolbar .btn, .btn-toolbar .btn-group, .btn-toolbar .input-group {
+    float: left;
+    margin-left: 5px; }
+
+.action-buttons {
+  outline: none;
+  /**
+   * When there are only 2 buttons to choose from ....
+   */ }
+  .action-buttons .selected {
+    color: #2077cf;
+    border: 1px solid #2077cf;
+    background-color: #F0F8FF; }
+  .action-buttons.col-2 .btn {
+    width: 48%; }
+    .action-buttons.col-2 .btn:last-child {
+      float: right; }
+
+.notification-bubble {
+  display: inline-block;
+  padding: 1px 5px 1px 6px;
+  text-align: center;
+  border-radius: 20px;
+  background: #EB2C19;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  line-height: 15px; }
+
+.nav-list li .notification-bubble {
+  position: absolute;
+  top: 13px;
+  right: 15px; }
+
+.section {
+  display: inline-block;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid;
+  border-color: #DAE1E8 #D3DDE5 #B6C8D8;
+  box-shadow: 0px 1px 0px 0px rgba(56, 61, 72, 0.09);
+  margin-bottom: 14px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px; }
+  .section .section-header {
+    background-color: #ffffff;
+    border-radius: 2px 2px 0 0;
+    overflow: visible;
+    border-bottom: 1px solid #dfe4e8; }
+    .section .section-header h2 {
+      line-height: 24px;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: 'Lato', Helvetica, Arial, sans-serif;
+      padding: 0px 15px 2px; }
+  .section .sub-section-header, .section .sub-section-header-big {
+    font-size: 18px;
+    font-family: "Helvetica Neue" helvetica, arial, sans-serif;
+    line-height: 26px;
+    color: #464d5c; }
+  .section .content {
+    padding: 15px; }
+  .section .sub-section-header-big {
+    font-size: 22px; }
+  .section .section-header-bg, .section .section-header-no-bg {
+    padding: 12px 10px 12px 15px;
+    overflow: auto;
+    line-height: 22px; }
+  .section .section-header-bg {
+    font-size: 15px;
+    font-family: "HelveticaNeue" helvetica, arial, sans-serif;
+    font-weight: 300;
+    background: #757F93;
+    border-radius: 2px 2px 0 0;
+    color: #fff;
+    overflow: visible; }
+  .section .section-header-bg-white {
+    padding: 13px 10px 13px 15px;
+    line-height: 22px;
+    color: #546980;
+    background-color: #ffffff;
+    font-size: 18px;
+    border-radius: 2px 2px 0 0;
+    overflow: visible;
+    border-bottom: 1px solid #dfe4e8; }
+  .section .section-header-no-bg {
+    font-size: 18px;
+    font-family: "HelveticaNeue" helvetica, arial, sans-serif;
+    font-weight: 300;
+    background: none;
+    border-radius: 0;
+    color: #000; }
+
+body.ie8 .section {
+  border: 1px solid #dfe4e8; }
+
+.section.transparent, body.ie8 .section.transparent {
+  background-color: transparent;
+  border: none;
+  box-shadow: none; }
+
+.section.first {
+  margin-top: 0; }
+
+.section.padding {
+  padding: 10px 12px; }
+
+/*-- DIVIDER --*/
+hr {
+  background: #dfe4e8;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 1.4em;
+  border: none; }
+
+/**
+ * Navigational Sidebars
+ * @namespace .nav
+ */
+ul.nav {
+  margin: 0px;
+  padding: 0px; }
+  ul.nav li {
+    position: relative;
+    list-style-type: none;
+    margin: 0px; }
+    ul.nav li a {
+      position: relative;
+      display: block;
+      font-weight: 400;
+      padding: 13px 0 13px 15px;
+      word-wrap: break-word;
+      color: #585E6F;
+      -webkit-transition: background-color 0.05s linear;
+      -moz-transition: background-color 0.05s linear;
+      -o-transition: background-color 0.05s linear;
+      transition: background-color 0.05s linear; }
+      ul.nav li a:hover {
+        background-color: #f6f9fb;
+        color: #3784d3; }
+      ul.nav li a.active {
+        background-color: #f6f9fb;
+        font-weight: 400; }
+  ul.nav li:last-child {
+    border-bottom: none; }
+  ul.nav .footer {
+    border-top: 1px solid #dfe4e8; }
+
+/*---- Third-party libraries ---*/
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+/* -------------- DATE PICKER ---------------*/
+.datetime-picker input {
+  width: 130px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0 0 0 5px;
+  position: relative;
+  top: -2px;
+  color: #8890a2;
+  cursor: default; }
+.datetime-picker .add-on {
+  display: inline-block;
+  padding: 6px 6px 3px 7px;
+  border-left: 1px solid #d5dbe1; }
+  .datetime-picker .add-on .glyphicon {
+    font-size: 16px;
+    color: #8a9aac; }
+
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+/*---- MODAL ---*/
+#facebox-overlay {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #151E2D;
+  z-index: 99; }
+
+#facebox {
+  position: absolute;
+  z-index: 104;
+  text-align: left;
+  box-shadow: 0px 1px 5px rgba(51, 57, 60, 0.45);
+  background-color: #fff; }
+  #facebox td {
+    padding: 0; }
+  #facebox .header {
+    overflow: hidden;
+    padding: 17px 15px;
+    border-radius: 2px 2px 0 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e3eaf0; }
+    #facebox .header p {
+      color: #485061;
+      font-size: 18px;
+      font-family: "Lato" helvetica, arial, sans-serif;
+      font-weight: 400; }
+    #facebox .header a.close {
+      display: block;
+      height: 15px;
+      width: 15px;
+      background: url('//assets.edmodo.com/images_v2/sprites/sprite-close.png') center -146px no-repeat;
+      margin-top: 2px; }
+  #facebox .header.no-title {
+    border-bottom: 0; }
+  #facebox .header.no-header {
+    display: none; }
+  #facebox .body > div.content {
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 0 0 2px 2px; }
+  #facebox .body > div.content.loading > * {
+    visibility: hidden; }
+  #facebox .content.loading-fb {
+    background: url('//assets.edmodo.com/images_v2/loading.gif') center no-repeat; }
+  #facebox .content.loading-fb * {
+    visibility: hidden; }
+
+#facebox.rounded {
+  border-radius: 3px;
+  overflow: hidden; }
+
+#facebox.photo-viewer .popup .body > .header {
+  display: none; }
+
+#facebox.photo-viewer {
+  margin-left: -150px; }
+
+#facebox.photo-viewer .content {
+  position: relative; }
+
+#facebox.photo-viewer .thumbnail-nav {
+  position: absolute;
+  top: 0px;
+  right: -300px; }
+
+#facebox.photo-viewer .facebox-image {
+  max-width: 620px; }
+
+#facebox.photo-viewer .facebox-image > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%; }
+
+#facebox.no-background {
+  background-color: transparent; }
+
+#facebox.no-background .body > div.content {
+  background-color: transparent; }
+
+.facebox-footer {
+  padding: 10px 15px;
+  background: #f3f5f7;
+  text-align: right;
+  overflow: hidden;
+  border-top: 1px solid #dfe4e8;
+  clear: both;
+  border-radius: 0 0 2px 2px; }
+
+.facebox-footer a, .facebox-footer span {
+  margin: 0 0 0 5px; }
+
+.facebox-footer span {
+  color: #8890A2;
+  margin: 0 8px; }
+
+.facebox-footer span.steps {
+  margin: 5px 0 0 0; }
+
+.facebox-footer span.steps .current {
+  margin: 0; }
+
+.facebox-plain-footer {
+  padding: 20px;
+  text-align: right; }
+
+.select2-results {
+  margin: 0;
+  padding: 0; }
+  .select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit {
+    background: #f4f4f4;
+    display: list-item;
+    padding: 6px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px; }
+  .select2-results .select2-result .select2-result-label {
+    padding: 2px 7px;
+    height: 34px;
+    line-height: 32px; }
+    .select2-results .select2-result .select2-result-label .hex {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 2px;
+      position: relative;
+      top: 5px;
+      margin-right: 5px; }
+    .select2-results .select2-result .select2-result-label img {
+      width: 20px;
+      margin-right: 5px;
+      border-radius: 2px;
+      position: relative;
+      top: -2px; }
+  .select2-results .select2-result.select2-highlighted .select2-result-label .hex {
+    border: 1px solid rgba(255, 255, 255, 0.2); }
+
+.select2-container .select2-choices {
+  background-image: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .select2-container .select2-choices .select2-search-field input {
+    padding: 5px 10px; }
+  .select2-container .select2-choices .select2-search-choice {
+    color: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 6px 21px 6px 7px;
+    margin: 3px;
+    border: none; }
+    .select2-container .select2-choices .select2-search-choice.default_color {
+      background: #3784d3; }
+.select2-container .select2-search-choice-close {
+  right: 5px;
+  top: 7px; }
+.select2-container .select2-choices .select2-search-choice-focus {
+  background: blue; }
+  .select2-container .select2-choices .select2-search-choice-focus.default_color {
+    background: blue; }
+
+.select2-dropdown-open.select2-drop-above .select2-choices {
+  background-image: none; }
+
+.select2-search input, .select2-search-choice-close, .select2-container .select2-choice abbr, .select2-container .select2-choice .select2-arrow b {
+  background: 3px 1px no-repeat url('//assets.edmodo.com/bootstrap/recipient_x.png') !important; }
+
+.select2-container-multi .select2-choices .select2-search-field input.select2-active, .select2-search input.select2-active {
+  background: #fff !important; }
+
+.form-control.select2-container.select2-dropdown-open {
+  border-color: #73A9FF; }
+  .form-control.select2-container.select2-dropdown-open .select2-choices {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+  .form-control.select2-container.select2-dropdown-open.select2-drop-above {
+    border-radius: 0 0 2px 2px; }
+    .form-control.select2-container.select2-dropdown-open.select2-drop-above .select2-choices {
+      border-radius: 0 0 2px 2px; }
+
+.select2-drop-active {
+  border: 1px solid #73A9FF; }
+
+.ttip {
+  position: relative; }
+
+/* TOOLTIP */
+#eTooltip {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  left: -999em;
+  z-index: 105; }
+  #eTooltip .arrow {
+    position: relative;
+    margin: -9px auto 0 auto;
+    background: url '//assets.edmodo.com/images_v2/sprites/sprite-site-v2.png' 0 -193px no-repeat;
+    height: 10px;
+    width: 19px; }
+  #eTooltip p {
+    color: #fff;
+    padding: 5px 18px 5px 18px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    line-height: 24px; }
+
+#eTooltip.bottom #eTooltipArrow {
+  width: 14px;
+  height: 6px;
+  margin: 0 auto; }
+
+#eTooltip.left #eTooltipArrow {
+  position: absolute;
+  top: 8px;
+  right: -6px; }
+
+#eTooltip.top #eTooltipArrow {
+  position: absolute;
+  top: 100%;
+  width: 100%; }
+
+#eTooltipArrow div, .panelarrow div {
+  width: 0px;
+  height: 0px;
+  border-style: solid; }
+
+#eTooltip.bottom #eTooltipArrow div {
+  border-width: 0 7px 7px 7px;
+  border-color: transparent transparent #757e93 transparent; }
+
+#eTooltip.top #eTooltipArrow div {
+  margin: 0 auto;
+  border-width: 7px 7px 0 7px;
+  border-color: #757e93 transparent transparent transparent; }
+
+#eTooltip.right #eTooltipArrow div {
+  position: absolute;
+  top: 18px;
+  left: -6px;
+  border-width: 7px 7px 7px 0px;
+  border-color: transparent #757e93 transparent transparent; }
+
+.panelarrow {
+  position: relative;
+  width: 14px;
+  height: 7px;
+  margin: 0 auto; }
+  .panelarrow div {
+    border-width: 0 7px 7px 7px;
+    border-color: transparent transparent #fff transparent; }
+
+#rightside #settings-panel .panelarrow {
+  margin-left: 86%;
+  height: 6px; }
+
+#eTooltip.left #eTooltipArrow div {
+  border-width: 7px 0 7px 7px;
+  border-color: transparent transparent transparent #757e93; }
+
+#eTooltipInner {
+  background: #757e93;
+  min-width: 35px;
+  text-align: center;
+  border-radius: 2px;
+  max-width: 250px;
+  box-shadow: 0px 2px 6px rgba(117, 126, 147, 0.7); }
+
+#eTooltip.no-shadow #eTooltipInner {
+  box-shadow: none; }
+
+body.ie7 #eTooltip2 {
+  max-width: 150px; }
+
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+/*---- BODY ---*/
+body {
+  color: #383d48; }
+
+/*---- HEADLINES ---*/
+html, body, div, p, form, fieldset, legend, label, button, input, select, textarea {
+  font-size: 13px;
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  color: #383d48;
+  margin: 0;
+  padding: 0;
+  line-height: 22px; }
+
+h1 small, h2 small, h3 small, h4 small {
+  font-size: 60%;
+  color: #7E8390;
+  line-height: inherit;
+  padding-left: 10px; }
+
+h1 {
+  font-size: 2.3em;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  margin-top: 0; }
+
+h2 {
+  font-size: 1.75em;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: 'Lato', Helvetica, Arial, sans-serif; }
+
+h3 {
+  font-size: 1.43em;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: 'Lato', Helvetica, Arial, sans-serif; }
+
+h4 {
+  font-size: 1.25em;
+  line-height: 2.0;
+  font-weight: 500;
+  font-family: 'Lato', Helvetica, Arial, sans-serif; }
+
+p {
+  margin: 0px 0 16px;
+  line-height: 22px;
+  font-size: 13px; }
+
+/*---- Links ---*/
+a {
+  color: #3784d3;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none; }
+  a:hover, a .pseudolink {
+    color: #225e9b; }
+  a:hover, a:visited, a .pseudolink {
+    text-decoration: none;
+    cursor: pointer; }
+
+/*---- Lists ---*/
+ul.circle {
+  list-style-type: circle;
+  border-width: 3px; }
+  ul.circle ul {
+    list-style: inherit;
+    padding: 0 1.25rem;
+    margin-bottom: 0; }
+
+ul ul, ol ul {
+  list-style: inherit;
+  padding: 0 1.25rem; }
+
+/*---- Label ---*/
+label {
+  cursor: pointer; }
+
+/*---- Misc ---*/
+.subtext, a .subtext, a.subtext {
+  color: #A5A8B1; }
+
+.text-15 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px; }
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px; }
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6; }
+
+.embossed {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: -1px -1px 1px rgba(25, 25, 25, 0.2);
+  font-weight: bold; }
+
+.profile {
+  font-size: 30px;
+  font-weight: 500; }
+
+.regular {
+  font-weight: 400; }
+
+.small-text {
+  font-size: 13px;
+  line-height: 1.2; }
+
+.font-40 {
+  font-size: 40px; }
+
+.font-30 {
+  font-size: 30px; }
+
+/*---- LAYOUT ---*/
+#container404 {
+  margin: 10px auto;
+  padding: 50px 200px 80px;
+  text-align: center; }
+  #container404 .img {
+    width: 400px;
+    height: 400px;
+    background: #ccc;
+    margin: 0 auto; }
+  #container404 h1 {
+    font-weight: 200;
+    margin: 50px 0 30px;
+    color: #363d45;
+    font-size: 28px; }
+  #container404 .description {
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 200;
+    color: #363d45; }
+
+#footer404 {
+  border-top: 1px solid #edeff2;
+  padding-top: 24px;
+  margin-top: 27px; }
+  #footer404 a {
+    font-size: 14px;
+    color: #4c85cd; }
+  #footer404 .bullet {
+    display: inline-block;
+    background: #bec6cf;
+    margin: 0 12px 3px 12px;
+    width: 3px;
+    height: 3px;
+    border-radius: 2px; }

@@ -1,0 +1,78 @@
+/*-------------------------------------*/
+/*-------------- Pallete ---------------*/
+/*-------------------------------------*/
+
+.palleteprimary {
+  width:100%;
+  padding: 60px 0px;
+  background-color:#293f54;
+  margin-top: -20px;
+}
+/*-------------- Pallete ---------------*/
+.palletecard {
+  display: inline-block;
+  width:100%;
+  height: 300px;
+  background:#fff;
+  border-radius: 3px;
+  margin-top: 20px;
+  .header {
+    width:100%;
+    height:140px;
+    background:$blue;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #46617a;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $font-lato;
+  }
+  .hex {
+    text-align: center;
+    padding-top: 10px;
+    color: #46617a;
+    font-size: 13px;
+    font-family: $font-lato;
+  }
+  .code {
+    width:90px;
+    margin:20px auto;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-family: $font-lato-bold;
+    background:#293f54;
+    border-radius: 3px;
+  }
+  /*-- PRIMARY PALLETE --*/
+  .blue {background:$blue;}
+  .green {background:$green;}
+  .linkblue {background:$link-color;}
+  /*-- SECONDARY PALLETE --*/
+  .teal {background:$teal;}
+  .purple {background:$purple;}
+  .yellow {background: $yellow;}
+  .orange {background:$orange;}
+  .pink {background:$pink;}
+  .red {background:$red;}
+  /*-- GRAY SCALE --*/
+  .gray0 {background:$gray;}
+  .gray1 {background:$gray1;}
+  .gray2 {background:$gray2;}
+  .gray3 {background:$gray3;}
+  .gray4 {background:$gray4;}
+  .gray5 {background:$gray5;}
+}
+
+.palletesecondary {
+  width:100%;
+  padding: 40px 0px;
+  margin-top: -20px;
+  .last {margin-right: none;}
+}

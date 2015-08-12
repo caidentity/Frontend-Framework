@@ -1,0 +1,55 @@
+{
+  "name": "frontend_foundation",
+  "version": "1.0.7",
+  "description": "Edmodo Front End Foundation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caidentity/frontend-framework.git"
+  },
+  "authors": [
+    "caidentity <craig@caidentity.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caidentity/frontend-framework/issues"
+  },
+  "homepage": "https://github.com/caidentity/frontend-framework",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-coffee": "",
+    "gulp-concat": "^2.5.2",
+    "gulp-eslint": "^0.8.0",
+    "gulp-jasmine": "^2.0.1",
+    "gulp-jscs": "",
+    "gulp-karma": "",
+    "gulp-notify": "^2.2.0",
+    "gulp-order": "",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-shell": "",
+    "gulp-watch": "^4.2.4",
+    "gulp-webserver": "",
+    "handlebars": "",
+    "jquery": "~2.1.3",
+    "jquery-cookie": "git@github.com:carhartl/jquery-cookie.git",
+    "jsdoc": "",
+    "minami": "^1.1.0",
+    "q": "^1.4.1",
+    "select2": "git@github.com:select2/select2.git",
+    "sinon": "^1.15.4",
+    "streamqueue": "1.1.0",
+    "underscore": "~1.8.3"
+  },
+  "readmeFilename": "README.md",
+  "_id": "frontend-framework@1.0.1",
+  "_shasum": "2c557a621538b433259c0bf9d90b67287c5e1c00",
+  "_from": "git+ssh://git@github.com/caidentity/frontend-framework.git",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "phantomjs": "^1.9.8"
+  }
+}

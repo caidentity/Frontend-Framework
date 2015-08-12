@@ -1,0 +1,25 @@
+<!--
+  Your OAuth-enabled app should use this file as its callback URL
+    to fetch and store the One API Access Token
+-->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  (function(){
+    if (!window.parent) {
+      return;
+    }
+    var hash = window.location.hash;
+
+    if (!(hash && hash.length > 0)) {
+      return;
+    }
+    window.parent.postMessage(JSON.stringify({
+      message: 'oauthcallback',
+      data: hash
+    }), location.protocol + "//" + location.host);
+  })();
+</script>
+</body>
+</html>

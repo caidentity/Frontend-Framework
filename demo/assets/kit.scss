@@ -1,0 +1,16 @@
+/*
+/* This base is for style-guide pages and uikit presentation,
+/* these won't be used across products, but just for rendering purposes
+/*
+*/
+
+/*--KIT GLOBAL FRAME --*/
+@import "kit/global.scss";
+
+/*--KIT PAGES --*/
+@import "kit/home.scss";
+@import "kit/uikit.scss";
+@import "kit/pallete.scss";
+
+/*--KIT CODE PREVIEWS --*/
+@import "kit/syntax.scss";

@@ -1,0 +1,550 @@
+/*
+/* This base is for style-guide pages and uikit presentation,
+/* these won't be used across products, but just for rendering purposes
+/*
+*/
+/*--KIT GLOBAL FRAME --*/
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+/*-------------- Global Body ---------------*/
+#kitbody {
+  display: block;
+  font-family: "lato";
+  background: #eef2f6;
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+  #kitbody .leftside {
+    display: inline-block;
+    width: 200px;
+    float: left; }
+
+/*-------------- Navbar ---------------*/
+.kitnavbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 48px;
+  background: #276bb0;
+  border-bottom: 1px solid #09539c;
+  z-index: 8000; }
+  .kitnavbar .brand {
+    float: left;
+    padding: 14px 0px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 14px; }
+    .kitnavbar .brand a {
+      color: #fff; }
+  .kitnavbar .nav {
+    float: right;
+    /*-- END NAV -- */ }
+    .kitnavbar .nav ul {
+      margin: 0;
+      /*-- END UL -- */ }
+      .kitnavbar .nav ul li {
+        float: right;
+        padding: 0;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        list-style-type: none; }
+        .kitnavbar .nav ul li a {
+          display: block;
+          padding: 14px 25px;
+          color: #fff;
+          cursor: pointer;
+          text-decoration: none; }
+        .kitnavbar .nav ul li:hover {
+          cursor: pointer;
+          border-bottom: 1px solid #fff; }
+
+/*-------------- Masthead ---------------*/
+.kitheader {
+  width: 100%;
+  height: 270px;
+  background-position: center top;
+  background: #276bb0;
+  border-bottom: 1px solid #5a84ae;
+  margin-bottom: 20px;
+  padding-top: 40px; }
+  .kitheader h1 {
+    font-family: 'Lato-Light', Helvetica, Arial, sans-serif;
+    padding: 70px 0px 40px 0px;
+    margin: 0;
+    color: #fff;
+    font-size: 54px;
+    line-height: 20px; }
+  .kitheader p {
+    width: 400px;
+    font-family: "lato";
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px; }
+  .kitheader .img {
+    display: inline-block;
+    float: right;
+    width: 369px;
+    height: 270px;
+    background-position: center top;
+    background-size: 369px 270px;
+    -webkit-background-size: 369px 270px;
+    background-image: url("img/headerlogo.png"); }
+
+/*-------------- Footer ---------------*/
+.kitfooter {
+  position: relative;
+  margin: 10px 0 25px; }
+  .kitfooter li {
+    list-style-type: none;
+    padding-top: 20px;
+    color: #46597c;
+    font-size: 13px;
+    font-family: "lato";
+    font-weight: 400; }
+  .kitfooter .v {
+    text-align: left; }
+  .kitfooter .url {
+    text-align: right; }
+
+/*--KIT PAGES --*/
+/* --------------------------------------------------------
+ * NOTE: The '_constants' file contains the common values
+ * between edmodo applications. This includes Edmodo
+ * brand colors, values, breakpoints, etc.
+ * ------------------------------------------------------*/
+/* -------------- Colors ---------------*/
+/* Gray and brand colors for use across Edmodo. -*/
+/*-#045eb9-*/
+/* -------------- Fonts ---------------*/
+/*-------------- HOME HEADER ---------------*/
+.homehead {
+  width: 100%;
+  height: 420px;
+  background-position: center top;
+  background: #276bb0;
+  border-bottom: 1px solid #5a84ae;
+  margin-bottom: 20px;
+  padding-top: 100px; }
+  .homehead h1 {
+    font-family: "lato";
+    font-weight: 300;
+    padding: 70px 0px 40px 0px;
+    margin: 0;
+    color: #fff;
+    font-size: 54px;
+    line-height: 20px; }
+  .homehead p {
+    width: 400px;
+    font-family: "lato";
+    font-weight: 300;
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px; }
+  .homehead .btn, .homehead .btn:hover {
+    color: #fff;
+    border-color: #63a1d3;
+    padding: 16px 40px;
+    margin-top: 30px;
+    font-size: 15px; }
+  .homehead .img {
+    display: inline-block;
+    float: right;
+    width: 369px;
+    height: 270px;
+    background-position: center top;
+    background-size: 369px 270px;
+    -webkit-background-size: 369px 270px;
+    background-image: url("img/headerlogo.png"); }
+
+/*-------- Sections -------*/
+.section .note {
+  margin: 0px 0px 0px;
+  float: left;
+  padding: 2em; }
+  .section .note p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; }
+.section .example {
+  margin: 20px;
+  float: left; }
+
+/*-------- Buttons -------*/
+#kitbody .container .button.demo > .buttons, #kitbody .container .button.demo > .button, #kitbody .container .button.demo > .segment > .button {
+  margin: 20px 10px; }
+
+.buttonsegment .btn {
+  margin-right: 15px; }
+
+/*-------- Inputs -------*/
+.inputdemo {
+  font-size: 14px;
+  margin: 10px 15px 5px;
+  margin-left: 15px; }
+  .inputdemo input {
+    font-size: 14px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    float: left;
+    padding: 10px 10px; }
+  .inputdemo .sunken {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 20px;
+    background: #f8f9fa; }
+    .inputdemo .sunken input {
+      width: 96%; }
+
+.checkboxdemo {
+  margin: 40px 0px; }
+  .checkboxdemo input {
+    display: inline-block;
+    float: left;
+    width: 18px;
+    margin-top: 3px; }
+  .checkboxdemo label {
+    display: inline-block; }
+
+.demotooltip .btn {
+  display: block;
+  margin: 20px auto;
+  width: 60px; }
+
+/*-------- Segments -------*/
+.primarysegment {
+  height: 300px; }
+
+.sidesegment {
+  float: left;
+  width: 250px;
+  height: 300px;
+  margin-right: 100px !important; }
+
+/*-------- Grid -------*/
+.gridexample .row {
+  padding: 5px 0px; }
+.gridexample .section {
+  color: #97a2bb;
+  margin: 5px 0px;
+  text-align: center; }
+
+/*-------------------------------------*/
+/*-------------- Pallete ---------------*/
+/*-------------------------------------*/
+.palleteprimary {
+  width: 100%;
+  padding: 60px 0px;
+  background-color: #293f54;
+  margin-top: -20px; }
+
+/*-------------- Pallete ---------------*/
+.palletecard {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  border-radius: 3px;
+  margin-top: 20px;
+  /*-- PRIMARY PALLETE --*/
+  /*-- SECONDARY PALLETE --*/
+  /*-- GRAY SCALE --*/ }
+  .palletecard .header {
+    width: 100%;
+    height: 140px;
+    background: #276bb0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+  .palletecard .title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #46617a;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
+  .palletecard .hex {
+    text-align: center;
+    padding-top: 10px;
+    color: #46617a;
+    font-size: 13px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
+  .palletecard .code {
+    width: 90px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Lato-Bold', Helvetica, Arial, sans-serif;
+    background: #293f54;
+    border-radius: 3px; }
+  .palletecard .blue {
+    background: #276bb0; }
+  .palletecard .green {
+    background: #79b241; }
+  .palletecard .linkblue {
+    background: #3784d3; }
+  .palletecard .teal {
+    background: #4EB1CB; }
+  .palletecard .purple {
+    background: #717ECD; }
+  .palletecard .yellow {
+    background: #f5c960; }
+  .palletecard .orange {
+    background: #ee9923; }
+  .palletecard .pink {
+    background: #D96383; }
+  .palletecard .red {
+    background: #d63a40; }
+  .palletecard .gray0 {
+    background: #F2F2F3; }
+  .palletecard .gray1 {
+    background: #CBCDD2; }
+  .palletecard .gray2 {
+    background: #A5A8B1; }
+  .palletecard .gray3 {
+    background: #7E8390; }
+  .palletecard .gray4 {
+    background: #585E6F; }
+  .palletecard .gray5 {
+    background: #323a4e; }
+
+.palletesecondary {
+  width: 100%;
+  padding: 40px 0px;
+  margin-top: -20px; }
+  .palletesecondary .last {
+    margin-right: none; }
+
+/*--KIT CODE PREVIEWS --*/
+/*-- CONTENT CODE CALLOUTS --*/
+code {
+  position: relative;
+  top: -2px;
+  background: rgba(0, 0, 0, 0.06);
+  font-size: 85%;
+  padding: 1px 2px;
+  border-radius: 2px; }
+
+/*-- CODE PREVIEW SYNTAX --*/
+.codepreview {
+  margin-bottom: 16px;
+  /* Comment */
+  /* Error */
+  /* Keyword */
+  /* Operator */
+  /* Comment.Multiline */
+  /* Comment.Preproc */
+  /* Comment.Single */
+  /* Comment.Special */
+  /* Generic.Deleted */
+  /* Generic.Emph */
+  /* Generic.Error */
+  /* Generic.Heading */
+  /* Generic.Inserted */
+  /* Generic.Output */
+  /* Generic.Prompt */
+  /* Generic.Strong */
+  /* Generic.Subheading */
+  /* Generic.Traceback */
+  /* Keyword.Constant */
+  /* Keyword.Declaration */
+  /* Keyword.Namespace */
+  /* Keyword.Pseudo */
+  /* Keyword.Reserved */
+  /* Keyword.Type */
+  /* Literal.Number */
+  /* Literal.String */
+  /* Name.Attribute */
+  /* Name.Builtin */
+  /* Name.Class */
+  /* Name.Constant */
+  /* Name.Decorator */
+  /* Name.Entity */
+  /* Name.Exception */
+  /* Name.Function */
+  /* Name.Label */
+  /* Name.Namespace */
+  /* Name.Tag */
+  /* Name.Variable */
+  /* Operator.Word */
+  /* Text.Whitespace */
+  /* Literal.Number.Float */
+  /* Literal.Number.Hex */
+  /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
+  /* Literal.String.Doc */
+  /* Literal.String.Double */
+  /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
+  /* Literal.String.Interpol */
+  /* Literal.String.Other */
+  /* Literal.String.Regex */
+  /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
+  /* Name.Variable.Global */
+  /* Name.Variable.Instance */
+  /* Literal.Number.Integer.Long */ }
+  .codepreview pre {
+    padding: 16px;
+    overflow: auto;
+    background: #f7f7f7;
+    border-radius: 3px;
+    line-height: 1.45;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre-wrap;
+    tab-size: 2; }
+    .codepreview pre code {
+      display: inline;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      overflow: initial;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+      white-space: pre; }
+      .codepreview pre code span {
+        display: inline-block;
+        float: left; }
+  .codepreview .space {
+    width: 5px; }
+  .codepreview .tabspace {
+    width: 10px; }
+  .codepreview .hll {
+    background-color: #ffc; }
+  .codepreview .c {
+    color: #999; }
+  .codepreview .err {
+    color: #a00;
+    background-color: #faa; }
+  .codepreview .k {
+    color: #069; }
+  .codepreview .o {
+    color: #555; }
+  .codepreview .cm {
+    color: #09f;
+    font-style: italic; }
+  .codepreview .cp {
+    color: #099; }
+  .codepreview .c1 {
+    color: #999; }
+  .codepreview .cs {
+    color: #999; }
+  .codepreview .gd {
+    background-color: #fcc;
+    border: 1px solid #c00; }
+  .codepreview .ge {
+    font-style: italic; }
+  .codepreview .gr {
+    color: #f00; }
+  .codepreview .gh {
+    color: #030; }
+  .codepreview .gi {
+    background-color: #cfc;
+    border: 1px solid #0c0; }
+  .codepreview .go {
+    color: #aaa; }
+  .codepreview .gp {
+    color: #009; }
+  .codepreview .gu {
+    color: #030; }
+  .codepreview .gt {
+    color: #9c6; }
+  .codepreview .kc {
+    color: #069; }
+  .codepreview .kd {
+    color: #069; }
+  .codepreview .kn {
+    color: #069; }
+  .codepreview .kp {
+    color: #069; }
+  .codepreview .kr {
+    color: #069; }
+  .codepreview .kt {
+    color: #078; }
+  .codepreview .m {
+    color: #f60; }
+  .codepreview .s {
+    color: #d44950; }
+  .codepreview .na {
+    color: #4f9fcf; }
+  .codepreview .nb {
+    color: #366; }
+  .codepreview .nc {
+    color: #0a8; }
+  .codepreview .no {
+    color: #360; }
+  .codepreview .nd {
+    color: #99f; }
+  .codepreview .ni {
+    color: #999; }
+  .codepreview .ne {
+    color: #c00; }
+  .codepreview .nf {
+    color: #c0f; }
+  .codepreview .nl {
+    color: #99f; }
+  .codepreview .nn {
+    color: #0cf; }
+  .codepreview .nt {
+    color: #2f6f9f; }
+  .codepreview .nv {
+    color: #033; }
+  .codepreview .ow {
+    color: #000; }
+  .codepreview .w {
+    color: #bbb; }
+  .codepreview .mf {
+    color: #f60; }
+  .codepreview .mh {
+    color: #f60; }
+  .codepreview .mi {
+    color: #f60; }
+  .codepreview .mo {
+    color: #f60; }
+  .codepreview .sb {
+    color: #c30; }
+  .codepreview .sc {
+    color: #c30; }
+  .codepreview .sd {
+    color: #c30;
+    font-style: italic; }
+  .codepreview .s2 {
+    color: #c30; }
+  .codepreview .se {
+    color: #c30; }
+  .codepreview .sh {
+    color: #c30; }
+  .codepreview .si {
+    color: #a00; }
+  .codepreview .sx {
+    color: #c30; }
+  .codepreview .sr {
+    color: #3aa; }
+  .codepreview .s1 {
+    color: #c30; }
+  .codepreview .ss {
+    color: #fc3; }
+  .codepreview .bp {
+    color: #366; }
+  .codepreview .vc {
+    color: #033; }
+  .codepreview .vg {
+    color: #033; }
+  .codepreview .vi {
+    color: #033; }
+  .codepreview .il {
+    color: #f60; }
